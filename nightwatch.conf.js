@@ -53,28 +53,7 @@ module.exports = {
 
       desiredCapabilities: {
         browserName: 'chrome',
-        'goog:chromeOptions' : {
-          // args: ['--headless', '--no-sandbox', '--incognito']
-          args: ['no-sandbox', 'incognito']
-        },
-        javascriptEnabled: true,
-        acceptSslCerts: true,
-        acceptInsecureCerts: true
       },
-
-      // webdriver: {
-      //   // start_process: true,
-      //   server_path: 'node_modules/.bin/chromedriver',
-      //   port: 9515,
-      //   // cli_args: [
-      //   //   // '--no-sandbox',
-      //   //   // '--incognito',
-      //   //   // '--disable-dev-shm-usage',
-      //   //   // '--headless',
-      //   //   // '--remote-debugging-port=9222',
-      //   // ]
-      // }
-
     },
 
     safari: {
@@ -112,38 +91,6 @@ module.exports = {
         ]
       }
     },
-
-    // chrome: {
-    //   desiredCapabilities: {
-    //     browserName: 'chrome',
-    //     'goog:chromeOptions': {
-    //       // More info on Chromedriver: https://sites.google.com/a/chromium.org/chromedriver/
-    //       //
-    //       // w3c:false tells Chromedriver to run using the legacy JSONWire protocol (not required in Chrome 78)
-    //       w3c: true,
-    //       args: [
-    //         '--no-sandbox',
-    //         '--disable-dev-shm-usage',
-    //         // '--ignore-certificate-errors',
-    //         // '--allow-insecure-localhost',
-    //         '--headless',
-    //         '--remote-debugging-port=9222',
-    //       ]
-    //     }
-    //   },
-
-    //   webdriver: {
-    //     start_process: true,
-    //     server_path: '',
-    //     cli_args: [
-    //       '--no-sandbox',
-    //       '--disable-dev-shm-usage',
-    //       '--headless',
-    //       '--remote-debugging-port=9222',
-    //     ]
-    //   }
-    // }
-
   }
 
 }

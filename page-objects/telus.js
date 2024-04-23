@@ -1,6 +1,9 @@
 module.exports = {
   url: 'https://telus.com',
   elements: {
+    acknowledgeLink: {
+      selector: 'a[id=close-cookies-notice-banner-en-desktop]',
+    },
     searchButton: {
       selector: 'button[id=search-button]'
     },
