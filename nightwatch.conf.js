@@ -49,15 +49,19 @@ module.exports = {
       },
 
       desiredCapabilities: {
-        browserName: 'chrome'
+        browserName: 'chrome',
+        'goog:chromeOptions' : {
+          args: ['no-sandbox', 'incognito']
+        },
+        javascriptEnabled: true,
       },
 
       webdriver: {
         start_process: true,
         server_path: 'node_modules/.bin/chromedriver',
         cli_args: [
-          '--no-sandbox',
-          '--incognito',
+          // '--no-sandbox',
+          // '--incognito',
           // '--disable-dev-shm-usage',
           // '--headless',
           // '--remote-debugging-port=9222',
