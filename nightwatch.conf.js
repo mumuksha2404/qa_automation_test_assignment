@@ -51,13 +51,16 @@ module.exports = {
       desiredCapabilities: {
         browserName: 'chrome',
         'goog:chromeOptions' : {
-          args: ['no-sandbox', 'incognito']
+          args: ['--no-sandbox', '--incognito']
         },
+        port: 9515,
         javascriptEnabled: true,
+        acceptSslCerts: true,
+        acceptInsecureCerts: true
       },
 
       webdriver: {
-        start_process: true,
+        // start_process: true,
         server_path: 'node_modules/.bin/chromedriver',
         port: 9515,
         // cli_args: [
