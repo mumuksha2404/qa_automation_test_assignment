@@ -57,8 +57,9 @@ module.exports = {
         server_path: 'node_modules/.bin/chromedriver',
         cli_args: [
           '--no-sandbox',
-          '--disable-dev-shm-usage',
-          '--headless',
+          '--incognito',
+          // '--disable-dev-shm-usage',
+          // '--headless',
           // '--remote-debugging-port=9222',
         ]
       }
