@@ -54,26 +54,25 @@ module.exports = {
       desiredCapabilities: {
         browserName: 'chrome',
         'goog:chromeOptions' : {
-          args: ['--no-sandbox', '--incognito']
+          args: ['no-sandbox', 'incognito']
         },
-        port: 9515,
         javascriptEnabled: true,
         acceptSslCerts: true,
         acceptInsecureCerts: true
       },
 
-      webdriver: {
-        // start_process: true,
-        server_path: 'node_modules/.bin/chromedriver',
-        port: 9515,
-        // cli_args: [
-        //   // '--no-sandbox',
-        //   // '--incognito',
-        //   // '--disable-dev-shm-usage',
-        //   // '--headless',
-        //   // '--remote-debugging-port=9222',
-        // ]
-      }
+      // webdriver: {
+      //   // start_process: true,
+      //   server_path: 'node_modules/.bin/chromedriver',
+      //   port: 9515,
+      //   // cli_args: [
+      //   //   // '--no-sandbox',
+      //   //   // '--incognito',
+      //   //   // '--disable-dev-shm-usage',
+      //   //   // '--headless',
+      //   //   // '--remote-debugging-port=9222',
+      //   // ]
+      // }
 
     },
 
