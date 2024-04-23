@@ -118,7 +118,8 @@ module.exports = {
         start_process: true,
         server_path: '',
         cli_args: [
-          // --verbose
+          '--no-sandbox',
+          '--disable-dev-shm-usage',
         ]
       }
     }
