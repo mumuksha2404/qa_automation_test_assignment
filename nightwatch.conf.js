@@ -59,7 +59,7 @@ module.exports = {
           '--no-sandbox',
           '--disable-dev-shm-usage',
           '--headless',
-          '--remote-debugging-port=9222',
+          // '--remote-debugging-port=9222',
         ]
       }
 
