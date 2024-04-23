@@ -31,7 +31,10 @@ module.exports = {
   // See https://nightwatchjs.org/guide/concepts/test-globals.html
   globals_path: './globals.js',
 
-  webdriver: {},
+  webdriver: {
+    server_path: 'node_modules/.bin/chromedriver',
+    port: 9515,
+  },
 
   test_workers: {
     enabled: true
@@ -40,7 +43,7 @@ module.exports = {
   test_settings: {
     default: {
       disable_error_log: false,
-      launch_url: 'http://localhost',
+      launch_url: 'http://127.0.0.1',
 
       screenshots: {
         enabled: false,
