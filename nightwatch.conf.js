@@ -54,7 +54,13 @@ module.exports = {
 
       webdriver: {
         start_process: true,
-        server_path: 'node_modules/.bin/chromedriver'
+        server_path: 'node_modules/.bin/chromedriver',
+        cli_args: [
+          '--no-sandbox',
+          '--disable-dev-shm-usage',
+          '--headless',
+          '--remote-debugging-port=9222',
+        ]
       }
 
     },
