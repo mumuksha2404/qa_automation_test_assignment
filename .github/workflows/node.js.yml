@@ -4,8 +4,12 @@
 name: Node.js CI
 
 on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
   schedule:
-    - cron: '29 13 * * *'  # Run every day at 5:45 am UTC
+    - cron: '45 13 * * *'  # Run every day at 5:45 am UTC
 
 jobs:
   build:
