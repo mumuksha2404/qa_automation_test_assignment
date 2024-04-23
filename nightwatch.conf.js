@@ -59,13 +59,14 @@ module.exports = {
       webdriver: {
         start_process: true,
         server_path: 'node_modules/.bin/chromedriver',
-        cli_args: [
-          // '--no-sandbox',
-          // '--incognito',
-          // '--disable-dev-shm-usage',
-          // '--headless',
-          // '--remote-debugging-port=9222',
-        ]
+        port: 9515,
+        // cli_args: [
+        //   // '--no-sandbox',
+        //   // '--incognito',
+        //   // '--disable-dev-shm-usage',
+        //   // '--headless',
+        //   // '--remote-debugging-port=9222',
+        // ]
       }
 
     },
@@ -106,36 +107,36 @@ module.exports = {
       }
     },
 
-    chrome: {
-      desiredCapabilities: {
-        browserName: 'chrome',
-        'goog:chromeOptions': {
-          // More info on Chromedriver: https://sites.google.com/a/chromium.org/chromedriver/
-          //
-          // w3c:false tells Chromedriver to run using the legacy JSONWire protocol (not required in Chrome 78)
-          w3c: true,
-          args: [
-            '--no-sandbox',
-            '--disable-dev-shm-usage',
-            // '--ignore-certificate-errors',
-            // '--allow-insecure-localhost',
-            '--headless',
-            '--remote-debugging-port=9222',
-          ]
-        }
-      },
+    // chrome: {
+    //   desiredCapabilities: {
+    //     browserName: 'chrome',
+    //     'goog:chromeOptions': {
+    //       // More info on Chromedriver: https://sites.google.com/a/chromium.org/chromedriver/
+    //       //
+    //       // w3c:false tells Chromedriver to run using the legacy JSONWire protocol (not required in Chrome 78)
+    //       w3c: true,
+    //       args: [
+    //         '--no-sandbox',
+    //         '--disable-dev-shm-usage',
+    //         // '--ignore-certificate-errors',
+    //         // '--allow-insecure-localhost',
+    //         '--headless',
+    //         '--remote-debugging-port=9222',
+    //       ]
+    //     }
+    //   },
 
-      webdriver: {
-        start_process: true,
-        server_path: '',
-        cli_args: [
-          '--no-sandbox',
-          '--disable-dev-shm-usage',
-          '--headless',
-          '--remote-debugging-port=9222',
-        ]
-      }
-    }
+    //   webdriver: {
+    //     start_process: true,
+    //     server_path: '',
+    //     cli_args: [
+    //       '--no-sandbox',
+    //       '--disable-dev-shm-usage',
+    //       '--headless',
+    //       '--remote-debugging-port=9222',
+    //     ]
+    //   }
+    // }
 
   }
 
