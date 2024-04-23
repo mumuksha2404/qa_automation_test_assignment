@@ -54,7 +54,7 @@ module.exports = {
       desiredCapabilities: {
         browserName: 'chrome',
         'goog:chromeOptions' : {
-          args: ['no-sandbox', 'incognito']
+          args: ['--headless', '--no-sandbox', '--incognito']
         },
         javascriptEnabled: true,
         acceptSslCerts: true,
